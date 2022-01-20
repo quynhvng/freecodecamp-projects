@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - fcc_rwd_ProductLandingPage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oxygen:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header id="header" class="header">
+  <div class="header-logo">
+    <svg class="logo" height="80" width="240">
+      <circle cx="40" cy="40" r="20" fill="firebrick" />
+      <polygon points="40,40 60,40 60,20" fill="white" />
+      <text x="75" y="52" font-size="32" font-family="Oxygen">KäseHaus</text>
+    </svg>
+  </div>
+  <nav id="nav-bar" class="header-nav">
+    <label class="header-navBtn" for="navBtn">
+      <img class="header-navBtnImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/MenuResp_svg.svg/240px-MenuResp_svg.svg.png" />
+    </label>
+    <input id="navBtn" type="checkbox" style="display:none;">
+    <ul class="header-navItems">
+      <li><a class="header-navLink nav-link" href="#section1">About us</a></li>
+      <li><a class="header-navLink nav-link" href="#section2">How it's made</a></li>
+      <li><a class="header-navLink nav-link" href="#section3">Our products</a></li>
+    </ul>
+  </nav>
+  <div class="header-cart">
+    <img id="header-img" class="btn_cart" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Shopping_Cart_%2861550%29_-_The_Noun_Project.svg/240px-Shopping_Cart_%2861550%29_-_The_Noun_Project.svg.png" alt="cart" width="30" height="auto">
+  </div>
+</header>
+<main class="main">
+  <section id="section1" class="main-section">
+    <h1 class="main-frontHeading main-heading">Homemade, rich goodness.</h1>
+    <p class="main-frontText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <form id="form" class="form" action="https://www.freecodecamp.com/email-submit">
+      <p class="form-desc">Subscribe to receive our promotion offers</p>
+      <div class="form-items">
+        <input id="email" class="input form-item form-field" type="email" name="email" placeholder="Enter your email here">
+        <input id="submit" class="input btn form-item form-btn" type="submit" value="Subscribe">
+      </div>
+    </form>
+  </section>
+  <section id="section2" class="main-section">
+    <h1 class="main-heading">How it's made</h1>
+    <div class="iframeWrap">
+      <iframe id="video" class="iframe_video" title="Youtube video of cheese production by Tasty" src="https://www.youtube-nocookie.com/embed/wxm8jTzU_8o" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+  <section id="section3" class="main-section">
+    <h1 class="main-heading">Our products</h1>
+    <div class="itemList">
+      <div class="itemList-item">
+        <img class="itemList-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Reblochon_01.jpg/320px-Reblochon_01.jpg" alt="product image">
+        <div class="itemList-desc">
+          <h2 class="itemList-name">Reblochon</h2>
+          Product description. Image by <a href="https://commons.wikimedia.org/wiki/User:Coyau">Coyau</a>.
+        </div>
+        <button class="input btn itemList-btn">Add to cart</button>
+      </div>
+      <div class="itemList-item">
+        <img class="itemList-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Fourme_d%27Ambert_01.jpg/320px-Fourme_d%27Ambert_01.jpg" alt="product image">
+        <div class="itemList-desc">
+          <h2 class="itemList-name">Fourme d'Ambert</h2>
+          Product description. Image by <a href="https://commons.wikimedia.org/wiki/User:Coyau">Coyau</a>.
+        </div>
+        <button class="input btn itemList-btn">Add to cart</button>
+      </div>
+      <div class="itemList-item">
+        <img class="itemList-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Emmental_%28fromage%29_01.jpg/320px-Emmental_%28fromage%29_01.jpg" alt="product image">
+        <div class="itemList-desc">
+          <h2 class="itemList-name">Emmental</h2>
+          Product description. Image by <a href="https://commons.wikimedia.org/wiki/User:Coyau">Coyau</a>.
+        </div>
+        <button class="input btn itemList-btn">Add to cart</button>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <nav class="footer-nav">
+    <a class="footer-navItem nav-link" href="">Term</a>
+    <a class="footer-navItem nav-link" href="">Privacy</a>
+    <a class="footer-navItem nav-link" href="">Contact us</a>
+  </nav>
+  <p class="footer-text">Copyright 2021, KäseHaus.</p>
+</footer>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>

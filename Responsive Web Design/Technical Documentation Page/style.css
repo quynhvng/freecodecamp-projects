@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+:root {
+  font-size: 10px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font: 1.6rem "Open San", sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  font: 2.4rem "Nanum Gothic", sans-serif;
+}
+
+.pageWrapper {
+  display: grid;
+  grid-template-columns: 325px 1fr;
+  grid-template-rows: 80px calc(100vh - 80px);
+  grid-template-areas: "nav main" "nav main";
+}
+
+.main {
+  grid-area: main;
+  overflow: auto;
+  padding: 3rem;
+}
+
+.nav {
+  grid-area: nav;
+  overflow: auto;
+  box-shadow: 0 0 3px 1px #475A6B;
+}
+
+.nav-btn {
+  display: none;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    font-size: 9px;
+  }
+
+  .pageWrapper {
+    grid-template-areas: "nav nav" "main main";
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: visible;
+  }
+
+  .nav-items {
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: white;
+  }
+
+  .nav-btn {
+    display: block;
+    flex: initial;
+  }
+
+  .nav-heading {
+    flex: auto;
+  }
+
+  .js-hidden {
+    display: none;
+  }
+
+  .js-menuOpen span {
+    visibility: hidden;
+    position: relative;
+  }
+  .js-menuOpen span::before {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "menu_open";
+  }
+}
+.nav-heading {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.nav-btn {
+  padding: 1rem;
+  border: none;
+  background: white;
+  color: #475A6B;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  box-shadow: 0 0 1px 1px #475A6B;
+  color: #074B87;
+}
+
+.nav-link {
+  color: inherit;
+  text-decoration: none;
+  padding: 1.5rem 1rem;
+  border-top: 0.25px solid #475A6B;
+}
+
+.nav-link:hover {
+  color: #074B87;
+  text-decoration: underline;
+}
+
+.main-heading {
+  font-size: 3.2rem;
+  color: #074B87;
+  margin-bottom: 2rem;
+}
+
+.main-content {
+  margin-bottom: 4rem;
+}
+
+.main code {
+  display: block;
+  width: 100%;
+  background: #082E4F;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  color: #46A2F2;
+}

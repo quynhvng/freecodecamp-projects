@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - fcc_rwd_SurveyForm</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <!-- HEADER -->
+  <header>
+    <h1 id="title">A Survey of Interest</h1>
+    <p id="description">Thank you for taking your time to answer this survey on personal interests!</p>
+  </header>
+  <!-- FORM -->
+  <form id="survey-form">
+    <fieldset class="form-section">
+      <legend>Personal Information</legend>
+      <div class="form-subsec">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" class="form-control" type="text" name="name" placeholder="Enter your name" required autofocus>
+        <span></span>
+      </div>
+      <div class="form-subsec">
+        <label id="email-label" for="email">Email</label>
+        <input id="email" class="form-control" type="email" name="email" placeholder="Enter your email" required>
+        <span></span>
+      </div>
+      <div class="form-subsec">
+        <label id="number-label" for="number">Age</label>
+        <input id="number" class="form-control" type="number" name="age" min=0 max=100 placeholder="Enter your age">
+        <span></span>
+      </div>
+    </fieldset>
+    <fieldset class="form-section">
+      <legend>Personal Interest</legend>
+      <div class="form-subsec">
+        <label for="dropdown">What is your favourite colour?</label>
+        <select id="dropdown" class="form-control" name="fav-color">
+          <option disabled selected>Select colour</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <fieldset class="form-subsec">
+        <legend>Do you like cats?</legend>
+        <label><input type="radio" name="cat" value="yes" checked>Yes</label>
+        <label><input type="radio" name="cat" value="no">No</label>
+      </fieldset>
+      <fieldset class="form-subsec">
+        <legend>What is your favourite genre(s) of music?</legend>
+        <label><input type="checkbox" name="music" value="blues">Blues</label>
+        <label><input type="checkbox" name="music" value="jazz">Jazz</label>
+        <label><input type="checkbox" name="music" value="rock">Rock</label>
+        <label><input type="checkbox" name="music" value="pop">Pop</label>
+      </fieldset>
+      <div class="form-subsec">
+        <label for="text-input">Can you share with us your other interests?</label>
+        <textarea id="text-input" name="text-input" class="form-control" placeholder="I'm also interested in…"></textarea>
+      </div>
+    </fieldset>
+    <fieldset class="form-section">
+      <button id="submit" type="submit">Submit</button>
+    </fieldset>
+  </form>
+  <footer>
+    <div>Background designed by <a href="freepik.com">Freepik</a></div>
+  </footer>
+</div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>
