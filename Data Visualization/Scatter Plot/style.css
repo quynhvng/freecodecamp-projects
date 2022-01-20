@@ -1,0 +1,43 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+main {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  position: relative;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+#plot-container {
+  margin: 0 10vw;
+}
+
+#title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#plot-area {
+  overflow-x: scroll;
+}
+#plot-area svg {
+  display: block;
+  margin: auto;
+}
+#plot-area svg circle {
+  opacity: 0.5;
+}
+
+#tooltip {
+  padding: 10px;
+  box-shadow: 0 0 3px gray;
+}
+
+#cite {
+  text-align: right;
+}

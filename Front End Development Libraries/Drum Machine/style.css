@@ -1,0 +1,59 @@
+:root {
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  max-width: 320px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.drum-pad-container {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.drum-pad {
+  height: 100px;
+  width: 100px;
+  font-size: 20px;
+  background-color: #6610f2;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  margin: 2px;
+}
+.drum-pad:hover {
+  border: 2px solid lightgray;
+}
+
+.active-drum-pad {
+  background-color: #290661;
+}
+
+#display {
+  height: 20px;
+  margin: 0 auto 10px;
+  width: 80%;
+  border-bottom: 1px solid #6610f2;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+label input {
+  margin-left: 10px;
+}
+
+footer {
+  font-size: 14px;
+  margin-top: 25px;
+}

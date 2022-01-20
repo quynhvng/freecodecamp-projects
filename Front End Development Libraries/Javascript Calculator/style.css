@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+:root {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, "Roboto Mono", monoscript;
+}
+
+.container {
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #cfe2ff;
+}
+
+#calculator {
+  background-color: black;
+  padding: 15px;
+  max-width: calc(80px * 4);
+  border-radius: 10px;
+}
+
+#calc-display {
+  background-color: #232426;
+  color: white;
+  text-align: right;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+#calc-display #formula {
+  min-height: 20px;
+  padding-bottom: 5px;
+  color: #6ea8fe;
+  overflow-wrap: break-word;
+}
+#calc-display #display {
+  font-size: 36px;
+  cursor: pointer;
+  user-select: none;
+}
+
+#calc-keypad {
+  display: grid;
+  grid-template-areas: "left-top right" "left-bottom right";
+}
+#calc-keypad div {
+  display: flex;
+  flex-wrap: wrap;
+}
+#calc-keypad #memory-keys {
+  grid-area: left-top;
+}
+#calc-keypad #num-keys {
+  grid-area: left-bottom;
+}
+#calc-keypad #operator-keys {
+  grid-area: right;
+  max-width: 80px;
+}
+#calc-keypad button {
+  width: 80px;
+  height: calc(80px * 0.7);
+  font-size: 20px;
+  border: none;
+  background-color: #575b5f;
+  color: white;
+}
+#calc-keypad button:hover {
+  border: 2px solid #6ea8fe;
+}
+#calc-keypad button:active {
+  color: black;
+}
+#calc-keypad #zero {
+  width: calc(80px * 2);
+}
+#calc-keypad #equals {
+  background-color: #0d6efd;
+}
+#calc-keypad #clear {
+  background-color: #dc3545;
+}
+
+#note {
+  color: #adb5bd;
+  font-size: 12px;
+  margin-bottom: 10px;
+}

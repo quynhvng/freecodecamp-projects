@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - fcc_fedl_MarkdownPreviewer</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container-fluid max-vh-100">
+  <div class="row">
+    <div class="col">
+      <h1>Markdown Previewer</h1>
+      <p>Convert GitHub flavoured Markdown into HTML, with <a href="https://marked.js.org/" target="_blank" class="link-secondary">Marked<a> - a Markdown parser and compiler.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row my-3 align-items-baseline">
+        <div class="col-auto"><strong>Input</strong></div>
+        <button id="clearBtn" class="col-auto btn btn-secondary btn-sm" type="button">Clear</button>
+      </div>
+      <textarea id="editor" class="form-control bg-light font-monospace" style="height: 500px; resize: none;"></textarea>
+    </div>
+    <div class="col-md-6">
+      <div class="row my-3 align-item-baseline">
+        <div class="col-auto"><strong>Preview</strong></div>
+        <select id="previewOptBtn" class="col-auto btn btn-secondary btn-sm">
+          <option selected value="compiled">Compiled</option>
+          <option value="html">HTML</option>
+        </select>
+      </div>
+      <div id="preview" class="" style="height: 500px; overflow-y: scroll;"></div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script type="module" src="./script.js"></script>
+
+</body>
+</html>
